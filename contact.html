@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотосвят - Контакти</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-main">
+            <img src="/PhotoWorld/.img/logo.png" alt="Logo" class="nav-logo">
+            <ul class="sidebar" id="sidebar">
+
+                <li tabindex="2" class="close-button" onclick="hideSidebar()"><a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" 
+                    width="28px" fill="#000000">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                </svg></a></li>
+
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="about_us.html">За нас</a></li>
+                <li><a href="our_offers.html">Услуги</a></li>
+                <li><a href="promotion.html">Промоция</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-main">
+            <img src="/PhotoWorld/.img/logo.png" loading="lazy" alt="Logo" class="nav-logo">
+            <ul>
+                <li class="hideOnMobile"><a href="index.html">Начало</a></li>
+                <li class="hideOnMobile"><a href="about_us.html">За нас</a></li>
+                <li class="hideOnMobile"><a href="our_offers.html">Услуги</a></li>
+                <li class="hideOnMobile"><a href="promotion.html">Промоция</a></li>
+                <li class="hideOnMobile"><a href="contact.html">Контакти</a></li>
+
+                <li tabindex="1" class="menu-button" onclick="showSidebar()"><a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960"
+                     width="28px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                    </svg></a></li>
+                    
+            </ul>
+        </nav>
+    </header>
+    <section class="contact-us">
+        <div class="container">
+            <div class="contact-info">
+                <div class="icon">📧</div>
+                <p>photo.svqt@gmail.com</p>
+    
+                <div class="icon">📞</div>
+                <p>+359 88 466 4621</p>
+            </div>
+    
+            <div class="contact-form">
+                <h2>Изпратете Запитване</h2>
+                <br>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Име</label>
+                        <input type="text" id="name" name="name" placeholder="Име" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="email">Имейл</label>
+                        <input type="email" id="email" name="email" placeholder="Имейл" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="message">Запитване</label>
+                        <textarea id="message" name="message" placeholder="Запитване" required></textarea>
+                    </div>
+    
+                    <button type="submit" class="button">Изпрати</button>
+                </form>
+            </div>
+    
+            <div class="location">
+                <h2>Нашата Локация</h2>
+                <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d309.5693584363123!2d25.61652248263222!3d42.4248335007388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sbg!2sbg!4v1741099668230!5m2!1sbg!2sbg"
+                 style="border:0;" allowfullscreen="" loading="lazy" 
+                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2021 Фотосвят. Всички права запазени.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

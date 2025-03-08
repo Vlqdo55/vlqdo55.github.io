@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотосвят - Продукти</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-main">
+            <img src="/PhotoWorld/.img/logo.png" alt="Logo" class="nav-logo">
+            <ul class="sidebar" id="sidebar">
+                <li tabindex="2" class="close-button" onclick="hideSidebar()"><a><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="about_us.html">За нас</a></li>
+                <li><a href="our_offers.html">Услуги</a></li>
+                <li><a href="promotion.html">Промоция</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-main">
+            <img src="/PhotoWorld/.img/logo.png" loading="lazy" alt="Logo" class="nav-logo">
+            <ul>
+                <li class="hideOnMobile"><a href="index.html">Начало</a></li>
+                <li class="hideOnMobile"><a href="about_us.html">За нас</a></li>
+                <li class="hideOnMobile"><a href="our_offers.html">Услуги</a></li>
+                <li class="hideOnMobile"><a href="promotion.html">Промоция</a></li>
+                <li class="hideOnMobile"><a href="contact.html">Контакти</a></li>
+                <li tabindex="1" class="menu-button" onclick="showSidebar()"><a><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        <div class="back">
+          <a href="our_offers.html">
+            <button class="button">Назад</button>
+          </a>
+        </div>
+      </header>
+        <section class="filters-section">
+            <h1>Нашите Мултимедийни Продукти</h1>
+            <div class="filters">
+                <label for="category-multimedia">Категория:</label>
+                <select id="category-multimedia">
+                    <option value="all">Всички</option>
+                    <option value="photo-edit">Фоторетуш</option>
+                    <option value="product-photography">Продуктова Фотография</option>
+                    <option value="drone">Дрон Заснемане</option>
+                    <option value="video-edit">Професионален Видео Монтаж</option>
+                    <option value="animation">Анимация/Инфографика</option>
+                </select>
+                
+                <label for="sort">Сортиране по:</label>
+                <select id="sort">  
+                    <option value="price-asc">Цена (Ниска към Висока)</option>
+                    <option value="price-desc">Цена (Висока към Ниска)</option>
+                </select>
+            </div>
+        </section>        
+        <section class="packages">
+              <!-- Photo Edit -->
+              <div id="photo-edit" class="package" data-price="10">
+                <div class="package-image">
+                  <img src="/PhotoWorld/.img/photo_edit.jpg" alt="Фоторетуш">
+                </div>
+                <div class="package-details">
+                  <h3>Фоторетуш (на снимка)    150 – 500 лв.</h3>
+                  <a href="contact.html">
+                    <button class="button">Изпрати запитване</button>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Product Photography -->
+              <div id="product-photography" class="package" data-price="30">
+                <div class="package-image">
+                  <img src="/PhotoWorld/.img/product_photography.jpg" alt="Продуктова Фотография">
+                </div>
+                <div class="package-details">
+                  <h3>Продуктова фотография (на продукт)    15 – 50 лв.</h3>
+                  <a href="contact.html">
+                    <button class="button">Изпрати запитване</button>
+                  </a>
+                </div>
+              </div>
+
+              
+              <!-- Drone -->
+              <div id="drone" class="package" data-price="250">
+                <div class="package-image">
+                  <img src="/PhotoWorld/.img/drone.jpg" alt="Дрон Заснемане">
+                </div>
+                <div class="package-details">
+                  <h3>Дрон заснемане (30 мин.)  150 – 400 лв.</h3>
+                  <a href="contact.html">
+                    <button class="button">Изпрати запитване</button>
+                  </a>
+                </div>
+              </div>
+
+              
+              <!-- Video Editing -->
+              <div id="video-edit" class="package" data-price="300">
+                <div class="package-image">
+                  <img src="/PhotoWorld/.img/video_edit.jpg" alt="Видео Монтаж">
+                </div>
+                <div class="package-details">
+                  <h3>Професионален видео монтаж (до 3 мин.)    150 – 500 лв.</h3>
+                  <a href="contact.html">
+                    <button class="button">Изпрати запитване</button>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Animation -->
+              <div id="animation" class="package" data-price="500">
+                <div class="package-image">
+                  <img src="/PhotoWorld/.img/animation.jpg" alt="Анимация">
+                </div>
+                <div class="package-details">
+                  <h3>Анимация/инфографика (на минута)  200 – 800 лв.</h3>
+                  <a href="contact.html">
+                    <button class="button">Изпрати запитване</button>
+                  </a>
+                </div>
+              </div>
+        </section>
+    <footer>
+        <p>&copy; 2021 Фотосвят. Всички права запазени.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

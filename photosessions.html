@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотосвят - Продукти</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-main">
+            <img src="/PhotoWorld/.img/logo.png" alt="Logo" class="nav-logo">
+            <ul class="sidebar" id="sidebar">
+                <li tabindex="2" class="close-button" onclick="hideSidebar()"><a><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="about_us.html">За нас</a></li>
+                <li><a href="our_offers.html">Услуги</a></li>
+                <li><a href="promotion.html">Промоция</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-main">
+            <img src="/PhotoWorld/.img/logo.png" loading="lazy" alt="Logo" class="nav-logo">
+            <ul>
+                <li class="hideOnMobile"><a href="index.html">Начало</a></li>
+                <li class="hideOnMobile"><a href="about_us.html">За нас</a></li>
+                <li class="hideOnMobile"><a href="our_offers.html">Услуги</a></li>
+                <li class="hideOnMobile"><a href="promotion.html">Промоция</a></li>
+                <li class="hideOnMobile"><a href="contact.html">Контакти</a></li>
+                <li tabindex="1" class="menu-button" onclick="showSidebar()"><a><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        <div class="back">
+          <a href="our_offers.html">
+            <button class="button">Назад</button>
+          </a>
+        </div>
+      </header>
+        <section class="filters-section">
+            <h1>Нашите Фото Пакети</h1>
+            <div class="filters">
+                <label for="category-photosessions">Категория:</label>
+                <select id="category-photosessions">
+                    <option value="all">Всички</option>
+                    <option value="wedding">Сватбена Фотосесия</option>
+                    <option value="individual">Индивидуална Фотосесия</option>
+                    <option value="family">Семейна Фотосесия</option>
+                    <option value="prom">Фотозаснемане на Балове</option>
+                    <option value="other">Корпоративни и Други Фотосесии</option>
+                </select>
+                
+                <label for="sort">Сортиране по:</label>
+                <select id="sort">  
+                    <option value="price-asc">Цена (Ниска към Висока)</option>
+                    <option value="price-desc">Цена (Висока към Ниска)</option>
+                </select>
+            </div>
+        </section>        
+        <section class="packages">
+              <!-- Individual -->
+              <div id="individual" class="package" data-price="150">
+                <div class="package-image">
+                  <img src="/PhotoWorld/.img/offer-individual.jpg" alt="Индивидуална фотосесия">
+                </div>
+                <div class="package-details">
+                  <h3>Индивидуална фотосесия</h3>
+                  <div class="package-item">
+                    <h4>Мини сесия (~150-250 лв.)</h4>
+                    <ul>
+                      <li>30 минути, 10 обработени снимки</li>
+                    </ul>
+                  </div>
+                  <div class="package-item">
+                    <h4>Стандартна сесия (~300-500 лв.)</h4>
+                    <ul>
+                      <li>1 час, 25 обработени снимки</li>
+                    </ul>
+                  </div>
+                  <div class="package-item">
+                    <h4>Премиум сесия (~600-900 лв.)</h4>
+                    <ul>
+                      <li>2 часа, 50+ обработени снимки</li>
+                      <li>2-3 локации</li>
+                    </ul>
+                  </div>
+                  <a href="contact.html">
+                    <button class="button">Изпрати запитване</button>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Family -->
+              <div id="family" class="package" data-price="250">
+                <div class="package-image">
+                  <img src="/PhotoWorld/.img/offer-family.jpg" alt="Семейна фотосесия">
+                </div>
+                <div class="package-details">
+                  <h3>Семейна фотосесия</h3>
+                  <div class="package-item">
+                    <h4>Базов пакет (~250-400 лв.)</h4>
+                    <ul>
+                      <li>45 мин., 20 обработени снимки</li>
+                    </ul>
+                  </div>
+                  <div class="package-item">
+                    <h4>Разширен пакет (~500-700 лв.)</h4>
+                    <ul>
+                      <li>1.5 часа, 50 обработени снимки</li>
+                    </ul>
+                  </div>
+                  <a href="contact.html">
+                    <button class="button">Изпрати запитване</button>
+                  </a>
+                </div>
+              </div>
+
+              
+              <!-- Prom -->
+              <div id="prom" class="package" data-price="300">
+                <div class="package-image">
+                  <img src="/PhotoWorld/.img/offer-prom.jpg" alt="Заснемане на Балове">
+                </div>
+                <div class="package-details">
+                  <h3>Заснемане на балове</h3>
+                  <div class="package-item">
+                    <h4>Индивидуален пакет (~300-600 лв.)</h4>
+                    <ul>
+                      <li>1-2 часа фотосесия, 30-50 снимки</li>
+                    </ul>
+                  </div>
+                  <div class="package-item">
+                    <h4>Групов пакет (~150 лв./човек)</h4>
+                    <ul>
+                      <li>Заснемане на групи от 5+ души</li>
+                    </ul>
+                  </div>
+                  <a href="contact.html">
+                    <button class="button">Изпрати запитване</button>
+                  </a>
+                </div>
+              </div>
+
+              
+              <!-- Other Events -->
+              <div id="other" class="package" data-price="400">
+                <div class="package-image">
+                  <img src="/PhotoWorld/.img/offer-event.jpg" alt="Заснемане на Корпоративни събития">
+                </div>
+                <div class="package-details">
+                  <h3>Корпоративни и други събития</h3>
+                  <div class="package-item">
+                    <h4>Часова ставка (~250-400 лв./час)</h4>
+                  </div>
+                  <div class="package-item">
+                    <h4>Целодневно заснемане (~1500-3000 лв.)</h4>
+                  </div>
+                  <a href="contact.html">
+                    <button class="button">Изпрати запитване</button>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Wedding -->
+            <div id="wedding" class="package" data-price="1000">
+                <div class="package-image">
+                  <img src="/PhotoWorld/.img/offer-wedding.jpg" alt="Сватбена фотография">
+                </div>
+                <div class="package-details">
+                  <h3>Сватбена фотография</h3>
+                  <div class="package-item">
+                    <h4>Пакет „Класик“ (~1000-1500 лв.)</h4>
+                    <ul>
+                      <li>Заснемане на ритуала и фотосесия с младоженците (до 4 часа)</li>
+                      <li>100 обработени снимки</li>
+                      <li>Дигитална галерия за сваляне</li>
+                    </ul>
+                  </div>
+                  <div class="package-item">
+                    <h4>Пакет „Премиум“ (~1800-2500 лв.)</h4>
+                    <ul>
+                      <li>Заснемане на цялото събитие (до 10 часа)</li>
+                      <li>300 обработени снимки + фотокнига</li>
+                      <li>Видео трейлър (1-2 мин.)</li>
+                      <li>Дигитална галерия + USB с всички снимки</li>
+                    </ul>
+                  </div>
+                  <div class="package-item">
+                    <h4>Пакет „Лукс“ (~3000+ лв.)</h4>
+                    <ul>
+                      <li>12+ часа заснемане, вкл. подготовка, ритуал, фотосесия, парти</li>
+                      <li>500+ обработени снимки</li>
+                      <li>Пълен видеозапис + дрон кадри</li>
+                      <li>Луксозна фотокнига и персонализирана USB кутия</li>
+                    </ul>
+                  </div>
+                  <a href="contact.html">
+                    <button class="button">Изпрати запитване</button>
+                  </a>
+                </div>
+              </div>
+        </section>
+    <footer>
+        <p>&copy; 2021 Фотосвят. Всички права запазени.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,807 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%; 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e0f0f3;
+    font-size: 1rem;
+    min-height: 200px;
+    min-width: 100px;
+}
+
+/* NAV START */
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 12vh; 
+    min-height: 70px;
+    max-height: 100px;
+    background-color: #ffffff;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 1rem;
+    z-index: 1000; /* Навигацията е на най-преден план */
+}
+
+.nav-logo {
+    height: 100%; 
+    width: auto;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 100%;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 40px;
+    text-decoration: none;
+    display: flex;
+    color: black;
+    align-items: center;
+}
+
+nav a:hover{
+    background-color: #f0f0f0;
+}
+
+/* SIDEBAR */
+.sidebar{
+    margin-top: 70px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 75vh;
+    width: 40%;
+    background-color: #ffffff;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.menu-button{
+    height: 100%;
+    padding: 0 10px;
+    text-decoration: none;
+    display: none;
+    color: black;
+}
+
+.menu-button:hover{
+    background-color: #f0f0f0;
+}
+
+.close-button{
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.close-button:hover{
+    background-color: #f0f0f0;
+}
+
+@media(max-width: 974px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block; /* Бутонът за меню се появява и става фиксиран */
+    }
+}
+
+@media(max-width:500px){
+    .sidebar{
+        width: 100%;
+    }
+}
+/* NAV END */
+
+/* FOOTER START */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+/* FOOTER END */
+
+/* INDEX START */
+.main-home-section{
+    position: relative;
+    background-image: url('/PhotoWorld/.img/index_main_background.jpg');
+    background-attachment: fixed; 
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white; 
+    text-align: center;
+    font-size: 2rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.main-home-section h1{
+    text-align: center;
+    font-size: 3rem; 
+    padding: 20px;
+}
+
+@media(max-width: 1150px){
+    .main-home-section {
+        font-size: 1.8rem;
+    }    
+    .main-home-section h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.for-company-content {
+    background-color: #474747;  
+    padding: 20px;
+    height: auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    font-size: 1.125rem;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.section-image-about-us {
+    padding: 10px;
+    flex: 1; 
+    width: 50%; 
+    height: auto; 
+    border-radius: 30px; 
+    object-fit: contain; 
+    display: block; 
+}
+
+.text-box-company {
+    background-color: #3d3d3d9d;  
+    margin: 10px;
+    flex: 1; 
+    text-align: center; 
+    padding: 50px;
+    width: 90%;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-box-company h2 {
+    color: white;
+}
+
+.text-box-company p {
+    padding: 20px;
+    color: white;
+    line-height: 2;
+}
+
+@media (max-width: 1150px) {
+    .for-company-content {
+        flex-direction: column; 
+        height: auto; 
+        align-items: center;
+    }
+
+    .section-image-about-us {
+        width: 80%; 
+        height: auto; 
+        max-width: 80%; 
+    }
+
+    .text-box-company {
+        padding: 15px 10px; 
+    }
+}
+
+.offers-main {
+    background-color: #474747;  
+    padding: 20px;
+    height: auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    font-size: 1.125rem;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.section-image-offers {
+    padding: 10px;
+    flex: 1; 
+    width: 50%; 
+    height: auto; 
+    border-radius: 30px; 
+    object-fit: contain; 
+    display: block; 
+    order: 2;
+}
+
+.text-box-offers {
+    background-color: #3d3d3d9d;  
+    margin: 10px;
+    flex: 1; 
+    text-align: center; 
+    padding: 50px;
+    width: 90%;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    order: 1;
+}
+
+.text-box-offers h2 {
+    color: white;
+}
+
+.text-box-offers p {
+    color: white;
+    line-height: 2;
+    padding: 20px;
+}
+
+.text-box-offers ol {
+    padding: 20px;
+}
+
+.text-box-offers ol li {
+    color: white;
+    line-height: 2;
+}
+
+@media (max-width: 1150px) {
+    .offers-main {
+        flex-direction: column; 
+        height: auto; 
+        align-items: center;
+    }
+
+    .section-image-offers,
+    .text-box-offers {
+        order: unset; 
+    }
+
+    .section-image-offers {
+        width: 80%; 
+        height: auto; 
+        max-width: 80%; 
+    }
+
+    .text-box-offers {
+        padding: 15px 10px; 
+    }
+}
+/* INDEX END */
+
+/* ABOUT US START */
+.about-us {
+    background-color:#e0f0f3;
+    margin-top: 120px;
+    height: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 1.8rem;
+    flex-wrap: wrap; 
+}
+
+.about-us-text-box {
+    margin: 20px;
+    background-color:  #e0f0f3;
+    text-align: left;
+    padding: 20px;
+    max-width: 90%;
+    border-radius: 30px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-text-box h1 {
+    text-align: center;
+    margin: 30px;
+    margin-bottom: 60px;
+    color: rgb(0, 0, 0);
+    font-size: 2.8rem
+}
+
+.about-us-text-box h2 {
+    text-align: center;
+    margin: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 2rem
+}
+
+.about-us-text-box h3 {
+    text-align: center;
+    margin: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 1.8rem
+}
+
+.about-us-text-box p {
+    margin: 30px;
+    color: rgb(0, 0, 0);
+    line-height: 1.6;
+    font-size: 1.4rem
+}
+
+.about-us-text-box ul {
+    margin: 35px;
+    color: rgb(0, 0, 0);
+    line-height: 1.6;
+    font-size: 1.4rem
+}
+
+.about-us-statistic {
+    background-color:#e0f0f3;
+    margin-top: 20px;
+    height: auto; /* Allow section height to adjust naturally */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically align items */
+    font-size: 1.5rem;
+    flex-wrap: wrap; /* Allow wrapping in smaller screens */
+    gap: 30px;
+}
+
+.about-us-statistic-box {
+    margin: 10px;
+    flex: 1;
+    text-align: left;
+    line-height: 1.6;
+    padding: 50px;
+    width: 40%;
+    max-width: 40%;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    order: 1;
+}
+
+.about-us-diagram {
+    margin: 20px;
+    flex: 1; 
+    width: 40%;
+    max-width: 40%; 
+    height: auto; 
+    border-radius: 30px; 
+    object-fit: contain; 
+    display: block; 
+    order: 2;
+}
+
+.about-us-statistic-box h2 {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.8rem;
+}
+
+@media (max-width: 1150px) {
+    .about-us-text-box {
+        font-size: 1.2rem;
+        margin: 10px;
+    }
+
+    .about-us-text-box p {
+        font-size: 1.2rem;
+    }
+
+    .about-us-text-box ul {
+        font-size: 1.2rem;
+    }
+
+    .about-us-text-box h1 {
+        font-size: 2.3rem;
+    }
+
+    .about-us-text-box h2 {
+        font-size: 1.7rem;
+    }
+
+    .about-us-text-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-us-statistic {
+        flex-direction: column; 
+        height: auto; 
+        align-items: center;
+        font-size: 1.1rem;
+    }
+
+    .about-us-statistic h2 {
+        font-size: 1.4rem;
+    }
+
+    .about-us-diagram,
+    .about-us-statistic-box {
+        order: unset; 
+    }
+
+
+    .about-us-diagram {
+        width: 90%; 
+        height: auto; 
+        max-width: 90%; 
+    }
+
+    .about-us-statistic-box {
+        width: 80%; 
+        padding: 20px;
+        max-width: 80%;
+    }
+}
+/* ABOUT US END */
+
+/* CONTACT US START*/
+.contact-us {
+    background-color:#e0f0f3;
+    margin-top: 100px;
+    height: auto; 
+    justify-content: center;
+    align-items: center; 
+    font-size: 1.1rem;
+    flex-wrap: wrap; 
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.icon {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.location {
+    margin: 30px;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+}
+/* CONTACT US END*/
+
+/* SERVICES START */
+.services {
+    margin-top: 140px;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.services h1{
+    font-size: 2.2rem;
+}
+.menu {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.menu-item {
+    position: relative;
+    display: flex;
+    width: 40%;
+    height: 65%;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    color: black;
+    font-size: 1.8rem;
+}
+.multimedia {
+    background-image: url('/PhotoWorld/.img/multimedia.jpg');
+}
+.photosessions {
+    background-image: url('/PhotoWorld/.img/photosessions.jpg');
+}
+@media(max-width: 700px){
+    .menu{
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    .menu-item{
+        width: 80%;
+        margin: 10px 0;
+    }
+}
+/* SERVICES END */
+
+/* PHOTOSESSIONS AND MULTIMEDIA START */
+.filters-section {
+    background-color:  #e0f0f3;
+    margin-top: 80px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    font-size: 1.6rem;
+}
+
+.filters-section h1 {
+    margin: 30px;
+    padding: 20px;
+    font-size: 2rem;
+    color: black;
+}
+
+/* Filter Menu*/
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 10px auto;
+    max-width: 90%;
+}
+
+.filters label {
+    font-weight: bold;
+    color: black;
+}
+
+.filters select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+    .filters {
+        flex-direction: column;
+        align-items: center;
+    }
+    .filters select {
+        width: 100%;
+    }
+}
+
+.packages {
+    margin: 35px 0;
+    padding: 20px 20px;
+    background-color: #e0f0f3;
+    height: auto;
+}
+  
+.packages h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+}
+  
+.package {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+  
+.package-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+}
+  
+.package-image img {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+}
+  
+.package-details {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+  
+.package-details h3 {
+    font-size: 1.8rem;
+    color: #2980b9;
+    margin-bottom: 25px;
+}
+  
+.package-item {
+    text-align: left;
+    margin-bottom: 20px;
+}
+  
+.package-item h4 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.package-item p {
+    font-size: 1.3rem;
+}
+  
+.package-item ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    line-height: 2;
+    font-size: 1.2rem;
+}
+  
+@media (max-width: 1024px) {
+    .package {
+      flex-direction: column;
+      margin-bottom: 20px;
+      padding: 20px 10px;
+    }
+  
+    .package-image {
+      width: 100%;
+    }
+  
+    .package-details {
+      width: 90%;
+    }
+  
+    .package-details h3 {
+      font-size: 1.6rem;
+    }
+  
+    .package-item h4 {
+      font-size: 1.3rem;
+    }
+}
+
+.back {
+    width: auto;
+    height: auto;
+    top: 13%;
+    left: 3%;
+    position: fixed;
+}
+/* PHOTOSESSIONS AND MULTIMEDIA END */
+
+/* PROMOTION START */
+.promotions {
+    margin-top: 140px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 20px;
+    height: auto;
+}
+.promotions h1{
+    font-size: 2.1rem;
+    margin-bottom: 50px;
+}
+/* PROMOTION END */
+
+
+
+/* BUTTON ONLY DESIGN */
+.button {
+    background-color: #2980b9; 
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #1f6391 ; 
+    transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+    .button {
+      font-size: 1.4rem;
+    }
+}
+  
+@media (max-width: 768px) {
+    .button {
+      font-size: 1.3rem;
+      padding: 10px 20px;
+    }
+}
+  
+@media (max-width: 480px) {
+    .button {
+      font-size: 1.2rem;
+      padding: 10px 15px;
+    }
+}

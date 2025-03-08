@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотосвят - Начало</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="/PhotoWorld/.img/logo.png" alt="Logo" class="nav-logo">
+            <ul class="sidebar" id="sidebar">
+
+                <li tabindex="2" class="close-button" onclick="hideSidebar()"><a><svg xmlns="http://www.w3.org/2000/svg"
+                   height="28px" viewBox="0 -960 960 960" 
+                  width="28px" fill="#000000">
+                  <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                </svg></a></li>
+
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="about_us.html">За нас</a></li>
+                <li><a href="our_offers.html">Услуги</a></li>
+                <li><a href="promotion.html">Промоция</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <img src="/PhotoWorld/.img/logo.png" loading="lazy" alt="Logo" class="nav-logo">
+            <ul>
+                <li class="hideOnMobile"><a href="index.html">Начало</a></li>
+                <li class="hideOnMobile"><a href="about_us.html">За нас</a></li>
+                <li class="hideOnMobile"><a href="our_offers.html">Услуги</a></li>
+                <li class="hideOnMobile"><a href="promotion.html">Промоция</a></li>
+                <li class="hideOnMobile"><a href="contact.html">Контакти</a></li>
+
+                <li tabindex="1" class="menu-button" onclick="showSidebar()"><a>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" 
+                  width="28px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                </svg></a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <!--NO CSS YET-->
+    <section class="promotions">
+        <h1>Сезонни Промоции!</h1>
+        <div class="package">
+            <div class="package-image">
+                <img src="/PhotoWorld/.img/summer_promotion.jpg" loading="lazy" alt="Summer Promotion">
+            </div>
+            <div class="package-details">
+                <h3>Лятна фотосесия    200 лв.</h3>
+                <div class="package-item">
+                    <br>
+                    <p>Лятна фотосесия на открито с красиви природни пейзажи, специално подбрани места или на плажа.</p>
+                    <br>
+                    <p>Пакетът включва:</p>
+                    <br>
+                    <ul>
+                        <li>1 час фотосесия</li>
+                        <li>30 обработени снимки</li>
+                        <li>Онлайн галерия за избор на снимки</li>
+                        <li>1 снимка в рамка 20x30 см</li>
+                    </ul>
+                </div>
+                <a href="contact.html">
+                    <button class="button">Изпрати запитване</button>
+                </a>      
+            </div>
+        </div>
+        <div class="package">
+            <div class="package-image">
+                <img src="/PhotoWorld/.img/family_promotion.jpg" loading="lazy" alt="Family Promotion">
+            </div>
+            <div class="package-details">
+                <div class="package-item">
+                    <h3>Мултимедиен пакет "Семейни спомени"    400 лв.</h3>
+                    <br>
+                    <p>Пакет за семейни спомени, включващ фотосесия и видео заснемане, както и създаване на мултимедийни продукти, като видео клипове и албуми.</p>
+                    <br>
+                    <p>Пакетът включва:</p>
+                    <br>
+                    <ul>
+                        <li>2 часа фотосесия</li>
+                        <li>1 видео клип от 5 минути с монтаж и специални ефекти</li>
+                        <li>Създаване на 1 мултимедиен албум с до 50 снимки</li>
+                        <li>Специална подаръчна кутия с 10 печатни снимки</li>
+                    </ul>
+                    <br>
+                </div>
+                <a href="contact.html">
+                    <button class="button">Изпрати запитване</button>
+                </a>   
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2021 Фотосвят. Всички права запазени.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотосвят - Начало</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="/PhotoWorld/.img/logo.png" alt="Logo" class="nav-logo">
+            <ul class="sidebar" id="sidebar">
+
+                <li tabindex="2" class="close-button" onclick="hideSidebar()"><a><svg xmlns="http://www.w3.org/2000/svg"
+                   height="28px" viewBox="0 -960 960 960" 
+                  width="28px" fill="#000000">
+                  <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                </svg></a></li>
+
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="about_us.html">За нас</a></li>
+                <li><a href="our_offers.html">Услуги</a></li>
+                <li><a href="promotion.html">Промоция</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <img src="/PhotoWorld/.img/logo.png" loading="lazy" alt="Logo" class="nav-logo">
+            <ul>
+                <li class="hideOnMobile"><a href="index.html">Начало</a></li>
+                <li class="hideOnMobile"><a href="about_us.html">За нас</a></li>
+                <li class="hideOnMobile"><a href="our_offers.html">Услуги</a></li>
+                <li class="hideOnMobile"><a href="promotion.html">Промоция</a></li>
+                <li class="hideOnMobile"><a href="contact.html">Контакти</a></li>
+
+                <li tabindex="1" class="menu-button" onclick="showSidebar()"><a>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" 
+                  width="28px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                </svg></a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <section class="main-home-section">
+            <h1>Добре дошли във Фотосвят!</h1>
+    </section>
+    <section class="for-company-content">
+        <img src="/PhotoWorld/.img/index_about_us.jpg" loading="lazy" alt="About Us Image" class="section-image-about-us">
+        <div class="text-box-company">
+          <h2>За Фотосвят</h2>
+          <br>
+          <p>Здравейте и добре дошли във Фотосвят – мястото, където фотографията оживява, 
+            а вашите най-ценни мигове се превръщат в незабравими спомени!
+
+            Аз съм професионален фотограф с дългогодишен опит в заснемането на 
+            сватби, балове, рождени дни, корпоративни събития и много други специални поводи. 
+            За мен фотографията е не просто работа, а страст, която ми позволява да разказвам истории чрез обектива си.</p>
+          <br>
+          <a href="about_us.html">
+            <button class="button">Научете повече</button>
+          </a>   
+        </div>
+      </section>
+      <section class="offers-main">
+        <img src="/PhotoWorld/.img/index_section_offers.jpg" loading="lazy" alt="Offers Image" class="section-image-offers">
+        <div class="text-box-offers">
+          <h2>Нашите Предложения</h2>
+          <br>
+            <p> Ние предлагаме професионални фото и видео услуги, които запечатват специалните моменти в живота ви:</p>  
+            <br> 
+            <ol>
+              <li>Фотосесии – семейни, портретни, сватбени, бебешки и индивидуални сесии, заснети с внимание към всеки детайл.</li>
+              <li>Видеозаснемане – за вашите тържества, корпоративни събития или рекламни нужди.</li>
+              <li>Мултимедийни продукти – персонализирани фотоалбуми, дигитални галерии и креативни видеоклипове.</li>
+            </ol>     
+            <br>
+            <p>Свържете се с нас, за да обсъдим вашите идеи и да създадем заедно спомени, които ще останат завинаги!</p>
+            <br>
+            <a href="our_offers.html">
+              <button class="button">Научете повече</button>
+            </a>   
+        </div>
+      </section>
+    <footer>
+        <p>&copy; 2021 Фотосвят. Всички права запазени.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
