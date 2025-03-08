@@ -136,7 +136,7 @@ footer {
 /* INDEX START */
 .main-home-section{
     position: relative;
-    background-image: url('/PhotoWorld/.img/index_main_background.jpg');
+    background-image: url('images/index_main_background.jpg');
     background-attachment: fixed; 
     background-position: top;
     background-size: cover;
@@ -571,10 +571,10 @@ iframe {
     font-size: 1.8rem;
 }
 .multimedia {
-    background-image: url('/PhotoWorld/.img/multimedia.jpg');
+    background-image: url('images/multimedia.jpg');
 }
 .photosessions {
-    background-image: url('/PhotoWorld/.img/photosessions.jpg');
+    background-image: url('images/photosessions.jpg');
 }
 @media(max-width: 700px){
     .menu{
