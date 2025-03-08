@@ -599,7 +599,7 @@ iframe {
     text-align: center;
     width: 100%;
     height: auto;
-    font-size: 1.6rem;
+    font-size: 1.1rem;
 }
 
 .filters-section h1 {
@@ -746,8 +746,8 @@ iframe {
 .back {
     width: auto;
     height: auto;
-    top: 13%;
-    left: 3%;
+    top: 90px;
+    left: 15px;
     position: fixed;
 }
 /* PHOTOSESSIONS AND MULTIMEDIA END */
